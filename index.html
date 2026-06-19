@@ -785,83 +785,88 @@
                 </p>
             </div>
 
-            <!-- Luxury Pricing Card -->
-            <div class="max-w-lg mx-auto bg-gradient-to-b from-[#FAF5F0]/60 to-[#EFE7DD]/60 backdrop-blur-xl border border-white/50 p-2 sm:p-3 rounded-[32px] sm:rounded-[40px] shadow-[0_30px_60px_-15px_rgba(60,30,10,0.15)] relative overflow-hidden transition-all duration-700 hover:shadow-[0_40px_80px_-15px_rgba(60,30,10,0.2)] hover:border-white/70 hover:-translate-y-1">
+            <!-- Luxury Pricing Card — horizontal no desktop, vertical no mobile -->
+            <div class="max-w-4xl mx-auto bg-gradient-to-b from-[#FAF5F0]/60 to-[#EFE7DD]/60 backdrop-blur-xl border border-white/50 p-2 sm:p-3 rounded-[32px] sm:rounded-[40px] shadow-[0_30px_60px_-15px_rgba(60,30,10,0.15)] relative overflow-hidden transition-all duration-700 hover:shadow-[0_40px_80px_-15px_rgba(60,30,10,0.2)] hover:border-white/70 hover:-translate-y-1">
 
                 <!-- Internal Glow -->
-                <div class="absolute top-[-10%] right-[-10%] w-[60%] h-[60%] bg-white rounded-full blur-[60px] opacity-50 mix-blend-soft-light z-0 pointer-events-none"></div>
+                <div class="absolute top-[-10%] right-[-10%] w-[50%] h-[60%] bg-white rounded-full blur-[60px] opacity-50 mix-blend-soft-light z-0 pointer-events-none"></div>
 
-                <div class="bg-surface/50 backdrop-blur-md rounded-[24px] sm:rounded-[32px] p-8 sm:p-12 relative z-10 border border-white/30 shadow-[inset_0_2px_10px_rgba(255,255,255,0.7)]">
+                <div class="bg-surface/50 backdrop-blur-md rounded-[24px] sm:rounded-[32px] p-8 sm:p-10 relative z-10 border border-white/30 shadow-[inset_0_2px_10px_rgba(255,255,255,0.7)]">
 
-                    <div class="mb-10 inline-block">
-                        <span class="text-secondaryText text-xs font-medium uppercase tracking-[0.2em] border-b border-gold/40 pb-2">Oferta Especial</span>
-                    </div>
+                    <!-- Inner layout: flex-col mobile / flex-row desktop -->
+                    <div class="flex flex-col md:flex-row md:gap-12 md:items-center">
 
-                    <h3 class="text-3xl font-serif text-transparent bg-clip-text bg-gradient-to-br from-gold to-goldDark mb-10">Acesso completo ao<br>Método TST</h3>
+                        <!-- LEFT: Título + Checklist -->
+                        <div class="flex-1 md:border-r md:border-secondaryText/8 md:pr-12 mb-8 md:mb-0">
 
-                    <div class="max-w-md mx-auto relative mb-6">
-                        <!-- Top Divider -->
-                        <div class="absolute top-0 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-gold/20 to-transparent"></div>
+                            <div class="mb-8 inline-block">
+                                <span class="text-secondaryText text-xs font-medium uppercase tracking-[0.2em] border-b border-gold/40 pb-2">Oferta Especial</span>
+                            </div>
 
-                        <div class="py-10 flex flex-col items-center">
+                            <h3 class="text-3xl font-serif text-transparent bg-clip-text bg-gradient-to-br from-gold to-goldDark mb-8">Acesso completo ao<br>Método TST</h3>
+
+                            <!-- Checklist -->
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-3"><i data-lucide="check" stroke-width="1.5" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i><span class="text-secondaryText text-sm font-light leading-relaxed">Acesso vitalício ao curso completo</span></div>
+                                <div class="flex items-start gap-3"><i data-lucide="check" stroke-width="1.5" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i><span class="text-secondaryText text-sm font-light leading-relaxed">Certificado de conclusão</span></div>
+                                <div class="flex items-start gap-3"><i data-lucide="check" stroke-width="1.5" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i><span class="text-secondaryText text-sm font-light leading-relaxed">PDFs e materiais de apoio</span></div>
+                                <div class="flex items-start gap-3"><i data-lucide="check" stroke-width="1.5" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i><span class="text-secondaryText text-sm font-light leading-relaxed">Atualizações do curso incluídas</span></div>
+                                <div class="flex items-start gap-3"><i data-lucide="check" stroke-width="1.5" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i><span class="text-secondaryText text-sm font-light leading-relaxed"><span class="font-medium text-goldDark">Bônus:</span> avaliação de pele, ficha de anamnese, termo de consentimento e materiais prontos para atendimento</span></div>
+                            </div>
+                        </div>
+
+                        <!-- RIGHT: Preço + CTA -->
+                        <div class="flex-shrink-0 md:w-72 flex flex-col items-center text-center">
+
+                            <!-- Divider top (mobile only) -->
+                            <div class="md:hidden w-full h-[1px] bg-gradient-to-r from-transparent via-gold/20 to-transparent mb-8"></div>
+
                             <!-- Old Price -->
                             <p class="text-secondaryText line-through text-xs tracking-[0.2em] mb-3 opacity-60">De R$ 997,00</p>
 
                             <!-- Main Price -->
                             <div class="flex items-baseline justify-center gap-2 mb-1">
-                                <span class="text-[#B58543] font-medium text-2xl">R$</span>
+                                <span class="text-[#B58543] font-medium text-xl">R$</span>
                                 <span class="text-6xl sm:text-7xl font-light tracking-tighter text-[#3A1F13]">597</span>
                                 <span class="text-secondaryText text-[10px] tracking-[0.2em] uppercase ml-1 opacity-80">À Vista</span>
                             </div>
 
-                            <!-- Divider -->
-                            <div class="flex items-center justify-center gap-4 my-6">
-                                <div class="w-12 h-[1px] bg-secondaryText/10"></div>
+                            <!-- Divider Ou -->
+                            <div class="flex items-center justify-center gap-4 my-5">
+                                <div class="w-10 h-[1px] bg-secondaryText/10"></div>
                                 <span class="text-[10px] uppercase tracking-[0.2em] text-secondaryText/50">Ou</span>
-                                <div class="w-12 h-[1px] bg-secondaryText/10"></div>
+                                <div class="w-10 h-[1px] bg-secondaryText/10"></div>
                             </div>
 
                             <!-- Installment -->
-                            <div class="flex flex-col items-center justify-center mb-5">
-                                <p class="text-sm text-secondaryText tracking-wide font-light">até <span class="font-medium text-[#B58543] text-lg tracking-wider">12x de R$ 61,74</span></p>
-                            </div>
+                            <p class="text-sm text-secondaryText tracking-wide font-light mb-5">até <span class="font-medium text-[#B58543] text-lg tracking-wider">12x de R$ 61,74</span></p>
 
-                            <p class="text-[10px] sm:text-xs text-secondaryText/80 uppercase tracking-[0.2em] font-medium bg-surface/50 px-4 py-1.5 rounded-full inline-flex items-center gap-1.5">
+                            <!-- Badge vitalício -->
+                            <p class="text-[10px] sm:text-xs text-secondaryText/80 uppercase tracking-[0.2em] font-medium bg-surface/50 px-4 py-1.5 rounded-full inline-flex items-center gap-1.5 mb-8">
                                 <i data-lucide="infinity" stroke-width="1.5" class="w-3 h-3 text-gold"></i>
                                 Acesso Vitalício
                             </p>
+
+                            <!-- CTA Button -->
+                            <a href="https://pay.hotmart.com/I43912989F?off=uqjphkmz"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="button-editorial-frame bg-gradient-to-r from-[#DFCBAD]/40 to-[#E4D1B5]/30 w-full hover:!transform hover:-translate-y-1">
+                                <span class="z-10 relative">Quero acessar o<br>Método TST agora</span>
+                            </a>
+
+                            <!-- Guarantee -->
+                            <div class="mt-6 flex items-center justify-center gap-2 text-secondaryText text-[10px] uppercase tracking-widest font-medium opacity-70">
+                                <i data-lucide="shield" stroke-width="1.5" class="w-3 h-3 text-gold"></i> Garantia de 7 Dias
+                            </div>
                         </div>
 
-                        <!-- Bottom Divider -->
-                        <div class="absolute bottom-0 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-gold/20 to-transparent"></div>
-                    </div>
-
-                    <!-- What's included -->
-                    <div class="my-10 text-left border-y border-secondaryText/5 py-8">
-                        <div class="space-y-4">
-                            <div class="flex items-start gap-4"><i data-lucide="check" stroke-width="1.5" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i><span class="text-secondaryText text-sm font-light tracking-wide leading-relaxed">Acesso vitalício ao curso completo</span></div>
-                            <div class="flex items-start gap-4"><i data-lucide="check" stroke-width="1.5" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i><span class="text-secondaryText text-sm font-light tracking-wide leading-relaxed">Certificado de conclusão</span></div>
-                            <div class="flex items-start gap-4"><i data-lucide="check" stroke-width="1.5" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i><span class="text-secondaryText text-sm font-light tracking-wide leading-relaxed">PDFs e materiais de apoio</span></div>
-                            <div class="flex items-start gap-4"><i data-lucide="check" stroke-width="1.5" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i><span class="text-secondaryText text-sm font-light tracking-wide leading-relaxed">Atualizações do curso incluídas</span></div>
-                            <div class="flex items-start gap-4"><i data-lucide="check" stroke-width="1.5" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i><span class="text-secondaryText text-sm font-light tracking-wide leading-relaxed"><span class="font-medium text-goldDark">Bônus:</span> avaliação de pele, ficha de anamnese, termo de consentimento e materiais prontos para atendimento</span></div>
-                        </div>
-                    </div>
-
-                    <a href="https://pay.hotmart.com/I43912989F?off=uqjphkmz"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="button-editorial-frame bg-gradient-to-r from-[#DFCBAD]/40 to-[#E4D1B5]/30 w-full mt-4 hover:!transform hover:-translate-y-1">
-                        <span class="z-10 relative">Quero acessar o<br>Método TST agora</span>
-                    </a>
-
-                    <div class="mt-8 flex items-center justify-center gap-3 text-secondaryText text-[10px] uppercase tracking-widest font-medium opacity-80">
-                        <i data-lucide="shield" stroke-width="1.5" class="w-3 h-3 text-gold"></i> Garantia incondicional de 7 Dias
                     </div>
                 </div>
             </div>
         </section>
 
-                <!-- FAQ SECTION -->
+                        <!-- FAQ SECTION -->
         <section class="w-full pt-10 sm:pt-16 pb-10 sm:pb-16 border-b border-secondaryText/10">
             <div class="mb-20 text-center max-w-3xl mx-auto px-6">
                 <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif italic text-metallic-gold mb-5 pt-3 pb-2 leading-normal" style="overflow: visible;">Perguntas Frequentes</h2>
